@@ -187,6 +187,7 @@ input_data[cols[20]] = income_intervals.index(income) + 1
 # Button to trigger prediction for a random user
 if tab_model.button("Tahminle"):
 
+
     x = preprocess_data(input_data)
     #Kullanıcı olasılık
     # Use the preprocessed data for prediction

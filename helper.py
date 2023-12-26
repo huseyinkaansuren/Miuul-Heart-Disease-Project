@@ -95,10 +95,10 @@ def preprocess_data(df):
         df_processed["GenHlth"] + df_processed["MentHlth"]
     )
 
-    scaler = StandardScaler()
-    X = scaler.fit_transform(df_processed)
+    #scaler = StandardScaler()
+    #X = scaler.fit_transform(df_processed)
 
-    return X
+    return df_processed
 
 
 
