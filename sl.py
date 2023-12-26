@@ -195,7 +195,7 @@ if tab_model.button("Tahminle"):
     tab_model.write(probability)
 
     # Display prediction result message
-    if probability > 60:
+    if probability > 0.60:
         tab_model.subheader("Tahmin sonucu:")
         tab_model.write(
             f"%{probability * 100:.2f} olasılıkla hasta olarak tahminlendirildiniz. Kontrolünüz için başvuru sistemimizden en yakın tarihe randevu almanızı tavsiye ederiz."
