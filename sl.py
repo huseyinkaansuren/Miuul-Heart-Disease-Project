@@ -82,7 +82,7 @@ tab_vis.write(df.head())
 viscol_left, viscol_right = tab_vis.columns(2)
 viscol_left.write(df.describe().T)
 
-viscol_right.write(df.corr()
+viscol_right.write(df.corr())
 
 viscol_left.subheader("Cinsiyete Göre Hastalık Dağılımı")
 viscol_left.image("media/cinshasgraf.jpeg")
