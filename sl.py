@@ -9,7 +9,7 @@ from sklearn.preprocessing import StandardScaler
 from helper import preprocess_data, grab_col_names
 
 st.set_page_config(layout="wide")
-st.markdown("""<h1 style='color: #3498db; text-align: center;'>️👩‍⚕️Heart Disease Prediction👨‍⚕️</h1>""",unsafe_allow_html=True)
+st.markdown("""<h1 style='color: #3498db; text-align: center;'>️👩‍⚕️Kalp Hastalığı Tahmini👨‍⚕️</h1>""",unsafe_allow_html=True)
 
 #HOME
 tab_home, tab_data, tab_vis, tab_model = st.tabs(["Ana Sayfa", "Veri Seti", "Veriye Genel Bakış", "Model"])
@@ -177,7 +177,7 @@ input_data[cols[20]] = income_intervals.index(income) + 1
 #input_data
 
 # Button to trigger prediction for a random user
-if tab_model.button("Make Prediction"):
+if tab_model.button("Tahminle"):
 
     x = preprocess_data(input_data)
     #Kullanıcı olasılık
@@ -186,10 +186,10 @@ if tab_model.button("Make Prediction"):
 
     # Display prediction result message
     if probability > 70:
-        tab_model.subheader("Prediction Result:")
+        tab_model.subheader("Tahmin sonucu:")
         tab_model.write(
-            f"This person might have a heart problem with {probability * 100:.2f}% probability."
+            f"%{probability * 100:.2f} olasılıkla hasta olarak tahminlendirildiniz. Kontrolünüz için başvuru sistemimizden en yakın tarihe randevu almanızı tavsiye ederiz."
         )
     else:
-        tab_model.subheader("Prediction Result:")
-        tab_model.write("This person is not predicted to have a heart problem.")
+        tab_model.subheader("Tahmin sonucu:")
+        tab_model.write("Bir kalp sorununuz bulunmamaktadır.")
