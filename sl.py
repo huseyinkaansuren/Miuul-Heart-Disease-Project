@@ -46,7 +46,7 @@ tab_data.write("Hastanelerle olan anlaştmamızdan ve bizimle farklı yollardan 
 data = {
     'Değişken İsimleri': ['HighBP', 'HighChol', 'CholCheck', 'BMI', 'Smoker', 'Stroke', 'Diabetes',
                           'PhysActivity', 'Fruits', 'Veggies', 'HvyAlcoholConsump', 'AnyHealthcare',
-                          'NoDocbcCost', 'GenHlth', 'Menthlth', 'PhysHlth', 'DiffWalk', 'Sex', 'Age', 'Education', 'Income'],
+                          'NoDocbcCost', 'GenHlth', 'Menthlth', 'PhysHlth', 'DiffWalk', 'Sex', 'Age', 'Education', 'Income', 'HeartDiseaseorAttack'],
     'Açıklamalar': ['Kişiye bir sağlık profesyoneli tarafından Yüksek Kan Basıncı (High Blood Pressure) teşhisi konup konulmadığını belirtir.',
                     'Kişiye bir sağlık profesyoneli tarafından Yüksek Kan Kolesterolü (High Blood Cholesterol) teşhisi konup konulmadığını belirtir.',
                     'Kişinin son 5 yıl içinde kolesterol seviyelerinin kontrol edilip edilmediğini belirtir.',
@@ -67,7 +67,8 @@ data = {
                     'Kişinin cinsiyetini belirtir; 0 kadın, 1 erkek.',
                     'Kişinin yaşını belirtir; 1, 18 ila 24 yaş arası, 13, 80 yaş ve üstü, her aralık 5 yıllık bir artışa sahiptir.',
                     'Kişinin tamamladığı en yüksek okul yılını belirtir; 0, hiç katılmamış veya sadece anaokulu, 6, 4 yıl veya daha fazla kolej okumuş. ',
-                    'Kişinin toplam hane gelirini belirtir; 1 (en az 10.000 $) ile 8 (75.000 $ ve üzeri) arasında değişir.']
+                    'Kişinin toplam hane gelirini belirtir; 1 (en az 10.000 $) ile 8 (75.000 $ ve üzeri) arasında değişir.',
+                    'Kişinin hastalığı olup olmaması durumu (0 yok, 1 var)']
 }
 
 tab_data.table(pd.DataFrame(data))
