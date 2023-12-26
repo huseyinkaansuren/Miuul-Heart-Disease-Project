@@ -187,15 +187,13 @@ input_data[cols[20]] = income_intervals.index(income) + 1
 # Button to trigger prediction for a random user
 if tab_model.button("Tahminle"):
 
-    #tab_model.write(input_data)
     x = preprocess_data(input_data)
     #Kullanıcı olasılık
     # Use the preprocessed data for prediction
     probability = model.predict_proba(x)[:, 1][0]  # Probability of class 1
-    tab_model.write(probability)
 
     # Display prediction result message
-    if probability > 0.60:
+    if probability > 0.70:
         tab_model.subheader("Tahmin sonucu:")
         tab_model.write(
             f"%{probability * 100:.2f} olasılıkla hasta olarak tahminlendirildiniz. Kontrolünüz için başvuru sistemimizden en yakın tarihe randevu almanızı tavsiye ederiz."
