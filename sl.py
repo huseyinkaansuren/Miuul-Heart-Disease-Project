@@ -17,11 +17,11 @@ tab_home, tab_data, tab_vis, tab_model = st.tabs(["Ana Sayfa", "Veri Seti", "Ver
 
 
 tab_home.subheader("Biz Kimiz?")
-tab_home.write("Merhaba! Biz, Datatastalık Araştırma Ofisi, sağlık sektöründe bir dizi hizmet sunan bir ekip olarak sizlere hizmet vermeye başladık. Tesisimize gelen hastaların durumlarını inceleyerek, kalp hastalığı olup olmadığını tahmin etmek üzere geliştirdiğimiz bir uygulama ile sağlığınıza odaklanıyoruz.")
+tab_home.write("Merhaba! Biz, MİNİ DATATAM EĞİTİM VE ARAŞTIRMA HASTANESİ, sağlık sektöründe bir dizi hizmet sunan bir ekip olarak sizlere hizmet vermeye başladık. Tesisimize gelen hastaların durumlarını inceleyerek, kalp hastalığı olup olmadığını tahmin etmek üzere geliştirdiğimiz bir uygulama ile sağlığınıza odaklanıyoruz.")
 
 
 tab_home.subheader("Kalp Hastalığı Tahminleme Uygulaması")
-tab_home.write("Datatastalık Araştırma Ofisi olarak, geliştirdiğimiz kalp hastalığı tahminleme uygulaması ile hastalarımıza daha iyi hizmet sunmaya odaklanıyoruz. Bu uygulama, tesisimize gelen hastaların sağlık durumlarını inceleyerek, kalp hastalığı riskini tahminlememize yardımcı oluyor.")
+tab_home.write("MİNİ DATATAM EĞİTİM VE ARAŞTIRMA HASTANESİ olarak, geliştirdiğimiz kalp hastalığı tahminleme uygulaması ile hastalarımıza daha iyi hizmet sunmaya odaklanıyoruz. Bu uygulama, tesisimize gelen hastaların sağlık durumlarını inceleyerek, kalp hastalığı riskini tahminlememize yardımcı oluyor.")
 #tab_home.image("media/heartimage.jpg")
 
 tab_home.subheader("Hedeflerimiz📝")
