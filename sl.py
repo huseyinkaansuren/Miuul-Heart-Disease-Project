@@ -75,13 +75,10 @@ tab_data.table(pd.DataFrame(data))
 tab_vis.subheader("Veriye Genel Bakış")
 tab_vis.write(df.head())
 
-
+tab_vis.write(df.describe().T)
 
 viscol_left, viscol_right = tab_vis.columns(2)
 
-viscol_left.write(df.info())
-
-viscol_right.write(df.describe().T)
 
 viscol_left.subheader("Cinsiyete Göre Hastalık Dağılımı")
 viscol_left.image("media/cinshasgraf.jpeg")
