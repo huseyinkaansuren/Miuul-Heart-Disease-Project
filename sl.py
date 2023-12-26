@@ -193,3 +193,4 @@ if tab_model.button("Tahminle"):
     else:
         tab_model.subheader("Tahmin sonucu:")
         tab_model.write("Bir kalp sorununuz bulunmamaktadır.")
+        tab_model.balloons()
